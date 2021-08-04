@@ -1,49 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7550" started-at="2021-07-31T10:46:14Z" finished-at="2021-07-31T10:46:22Z">
+  <suite name="Default suite" duration-ms="40238" started-at="2021-08-03T13:40:29Z" finished-at="2021-08-03T13:41:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7550" started-at="2021-07-31T10:46:14Z" finished-at="2021-07-31T10:46:22Z">
-      <class name="tests.SignUpTests">
-        <test-method status="PASS" signature="reportSetup()[pri:0, instance:tests.SignUpTests@47ef968d]" name="reportSetup" is-config="true" duration-ms="121" started-at="2021-07-31T10:46:14Z" finished-at="2021-07-31T10:46:14Z">
+    <test name="Default test" duration-ms="40238" started-at="2021-08-03T13:40:29Z" finished-at="2021-08-03T13:41:09Z">
+      <class name="tests.RegistrationTests">
+        <test-method status="PASS" signature="reportSetup()[pri:0, instance:tests.RegistrationTests@47ef968d]" name="reportSetup" is-config="true" duration-ms="94" started-at="2021-08-03T13:40:29Z" finished-at="2021-08-03T13:40:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SignUpTests@47ef968d]" name="setup" is-config="true" duration-ms="7336" started-at="2021-07-31T10:46:14Z" finished-at="2021-07-31T10:46:21Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.RegistrationTests@47ef968d]" name="setup" is-config="true" duration-ms="21770" started-at="2021-08-03T13:40:29Z" finished-at="2021-08-03T13:40:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="personalRegistartion_001()[pri:0, instance:tests.SignUpTests@47ef968d]" name="personalRegistartion_001" duration-ms="7" started-at="2021-07-31T10:46:21Z" finished-at="2021-07-31T10:46:21Z">
+        <test-method status="PASS" signature="personalRegistrationTest()[pri:1, instance:tests.RegistrationTests@47ef968d]" name="personalRegistrationTest" duration-ms="18454" started-at="2021-08-03T13:40:51Z" finished-at="2021-08-03T13:41:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- personalRegistartion_001 -->
-        <test-method status="PASS" signature="personalRegistartion_002()[pri:0, instance:tests.SignUpTests@47ef968d]" name="personalRegistartion_002" duration-ms="1" started-at="2021-07-31T10:46:21Z" finished-at="2021-07-31T10:46:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalRegistartion_002 -->
-        <test-method status="PASS" signature="personalRegistartion_003()[pri:0, instance:tests.SignUpTests@47ef968d]" name="personalRegistartion_003" duration-ms="0" started-at="2021-07-31T10:46:21Z" finished-at="2021-07-31T10:46:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalRegistartion_003 -->
-        <test-method status="PASS" signature="personalRegistartion_004()[pri:0, instance:tests.SignUpTests@47ef968d]" name="personalRegistartion_004" duration-ms="1" started-at="2021-07-31T10:46:21Z" finished-at="2021-07-31T10:46:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalRegistartion_004 -->
-        <test-method status="PASS" signature="personalRegistartion_005()[pri:0, instance:tests.SignUpTests@47ef968d]" name="personalRegistartion_005" duration-ms="1" started-at="2021-07-31T10:46:21Z" finished-at="2021-07-31T10:46:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalRegistartion_005 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.SignUpTests@47ef968d]" name="teardown" is-config="true" duration-ms="189" started-at="2021-07-31T10:46:21Z" finished-at="2021-07-31T10:46:22Z">
+        </test-method> <!-- personalRegistrationTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.RegistrationTests@47ef968d]" name="teardown" is-config="true" duration-ms="1" started-at="2021-08-03T13:41:09Z" finished-at="2021-08-03T13:41:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="reportTeardow()[pri:0, instance:tests.SignUpTests@47ef968d]" name="reportTeardow" is-config="true" duration-ms="184" started-at="2021-07-31T10:46:22Z" finished-at="2021-07-31T10:46:22Z">
+        <test-method status="PASS" signature="reportTeardow()[pri:0, instance:tests.RegistrationTests@47ef968d]" name="reportTeardow" is-config="true" duration-ms="150" started-at="2021-08-03T13:41:09Z" finished-at="2021-08-03T13:41:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTeardow -->
-      </class> <!-- tests.SignUpTests -->
+      </class> <!-- tests.RegistrationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
