@@ -10,7 +10,7 @@ import pages.RegistrationScreens;
 public class PersonalRegistrationTests extends BaseClass{
 	
 	@Test(priority=1)
-	public void verifySupportedCountry() throws Exception {
+	public void verifySupportedCountry() throws Exception { 
 		
 		ExtentTest supportedCountryTest = extent.createTest("Supported Country Test", "Positive: Verifies supported country");
 		RegistrationScreens registartionScreens = new RegistrationScreens(androidDriver);
@@ -20,11 +20,11 @@ public class PersonalRegistrationTests extends BaseClass{
 			registartionScreens.tapAllowLocationWhileUsingApp();
 			supportedCountryTest.log(Status.INFO, "Allowing contacts permission");
 			registartionScreens.tapAllowContacts();
-			supportedCountryTest.log(Status.INFO, "Tapping Next button");
+			supportedCountryTest.log(Status.INFO, "Tapping Next button"); 
 			registartionScreens.tapNextButton();
-			supportedCountryTest.log(Status.INFO, "Tapping Next button");
+			supportedCountryTest.log(Status.INFO, "Tapping Next button"); 
 			registartionScreens.tapNextButton();
-			supportedCountryTest.log(Status.INFO, "Tapping Next button");
+			supportedCountryTest.log(Status.INFO, "Tapping Next button"); 
 			registartionScreens.tapNextButton();
 			supportedCountryTest.log(Status.INFO, "Tapping country drop-down");
 			registartionScreens.tapCountryDropdown();
