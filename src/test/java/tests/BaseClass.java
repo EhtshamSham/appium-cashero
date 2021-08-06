@@ -24,7 +24,7 @@ public class BaseClass {
 
 	AppiumDriver androidDriver;
 	ExtentReports extent; 
-	ExtentHtmlReporter htmlReporter;
+	ExtentHtmlReporter htmlReporter; 
 	
 	@BeforeSuite
 	public void reportSetup() {
