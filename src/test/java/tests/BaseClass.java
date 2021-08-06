@@ -23,7 +23,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class BaseClass {
 
 	AppiumDriver androidDriver;
-	ExtentReports extent;
+	ExtentReports extent; 
 	ExtentHtmlReporter htmlReporter;
 	
 	@BeforeSuite
