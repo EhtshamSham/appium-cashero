@@ -10,6 +10,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -37,19 +38,13 @@ public class BaseClass {
 		try {
 			
 			DesiredCapabilities capability = new DesiredCapabilities();
-			System.out.println(System.getProperty("os.name"));
+
 			capability.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 			capability.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
 			capability.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 4a");
 			capability.setCapability(MobileCapabilityType.UDID, "09091JEC214196");
 			capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
-			
-			if(System.getProperty("os.name")=="Linux") {
-				capability.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "/src/test/resources/apps/app-qa-debug.apk");
-			}
-			else if (System.getProperty("os.name")=="Windows 10"){
-				capability.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "\\src\\test\\resources\\apps\\app-qa-debug.apk");
-			}
+			capability.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + getApkRelativePATH());
 			
 			androidDriver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), capability);
 			androidDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -60,6 +55,20 @@ public class BaseClass {
 			//exp.printStackTrace();
 		}
 		
+	}
+	
+	public String getApkRelativePATH() {
+		if(System.getProperty("os.name").equals("Linux")) {
+			return "/src/test/resources/apps/app-qa-debug.apk";
+		}
+		else if (System.getProperty("os.name").equals("Windows 10")){
+			return "\\src\\test\\resources\\apps\\app-qa-debug.apk";
+		}
+		else {
+			System.out.println("No apk file found!");
+			androidDriver.quit();
+			return null;
+		}
 	}
 	
 	@AfterTest
