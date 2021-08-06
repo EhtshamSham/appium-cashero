@@ -37,13 +37,19 @@ public class BaseClass {
 		try {
 			
 			DesiredCapabilities capability = new DesiredCapabilities();
-			
+			System.out.println(System.getProperty("os.name"));
 			capability.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 			capability.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
 			capability.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 4a");
 			capability.setCapability(MobileCapabilityType.UDID, "09091JEC214196");
 			capability.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
-			capability.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "/src/test/resources/apps/app-qa-debug.apk");
+			
+			if(System.getProperty("os.name")=="Linux") {
+				capability.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "/src/test/resources/apps/app-qa-debug.apk");
+			}
+			else if (System.getProperty("os.name")=="Windows 10"){
+				capability.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "\\src\\test\\resources\\apps\\app-qa-debug.apk");
+			}
 			
 			androidDriver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), capability);
 			androidDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
