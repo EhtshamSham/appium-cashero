@@ -74,9 +74,7 @@ public class RegistrationScreens extends AbstractPageObject{
 	public void selectFirstCountry() throws Exception {
         try {
         	wait.until(ExpectedConditions.visibilityOf(firstCountry));
-        	
-      firstCountry.click();
-        	
+        	firstCountry.click();
         }catch(Exception ex){
             throw new Exception("Error : " + ex.getMessage());
         }
