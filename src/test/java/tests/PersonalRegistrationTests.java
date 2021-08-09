@@ -29,7 +29,7 @@ public class PersonalRegistrationTests extends BaseClass{
 			supportedCountryTest.log(Status.INFO, "Tapping country drop-down");
 			registartionScreens.tapCountryDropdown();
 			supportedCountryTest.log(Status.INFO, "Typing country name in search bar");
-			registartionScreens.enterCountryName("Pakistan");
+			registartionScreens.enterCountryName("Australia");
 			supportedCountryTest.log(Status.INFO, "Selecting first country from the search results");
 			registartionScreens.selectFirstCountry();
 			

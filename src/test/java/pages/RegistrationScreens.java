@@ -19,7 +19,7 @@ public class RegistrationScreens extends AbstractPageObject{
 	@FindBy(className = "android.widget.Button") private MobileElement nextButton;
 	@FindBy(xpath = "//android.view.View[@index='4']") private MobileElement countryDropdown;
 	@FindBy(xpath = "//android.widget.EditText[@index='1']") private MobileElement countrySearchBar;
-	@FindBy(xpath = "//android.view.View[@index='0']") private MobileElement firstCountry;
+	@FindBy(xpath = "//android.view.View[@bounds='[0,428][1080,626]']") private MobileElement firstCountry;
 	
     public RegistrationScreens(AppiumDriver driver){
         super(driver);
@@ -75,8 +75,7 @@ public class RegistrationScreens extends AbstractPageObject{
         try {
         	wait.until(ExpectedConditions.visibilityOf(firstCountry));
         	
-        	int xCentre = firstCountry.getLocation().getX() + firstCountry.getSize().getWidth()/2;
-        	int YCentre = firstCountry.getLocation().getY() + firstCountry.getSize().getHeight()/2;
+      firstCountry.click();
         	
         }catch(Exception ex){
             throw new Exception("Error : " + ex.getMessage());

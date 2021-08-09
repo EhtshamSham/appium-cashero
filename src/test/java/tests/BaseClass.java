@@ -73,7 +73,7 @@ public class BaseClass {
 	
 	@AfterTest
 	public void teardown() {
-		androidDriver.quit();
+		//androidDriver.quit();
 	}
 	
 	@AfterSuite
