@@ -1,0 +1,26 @@
+{
+	"capabilities":
+	[
+		{
+			"platformName": "Android",
+			"platformVersion": "11.0",
+			"maxInstances": 1,
+			"deviceName": "Pixel 4a",
+			"UDID": "09091JEC214196"
+		}
+	],
+	"configuration":
+	{
+		"cleanUpCycle": 2000,
+		"timeout": 30000,
+		"hubPort": 4444,
+		"port": 4724,
+		"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+		"url": "http://192.168.88.60:4444/wd/hub",
+		"hub": "http://192.168.88.60:4444/grid/register/",
+		"hubHost": "192.168.88.60",
+		"register": true,
+		"registerCycle": 5000,
+		"maxSession": 1
+	}
+}

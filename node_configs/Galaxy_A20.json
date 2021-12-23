@@ -1,0 +1,27 @@
+{
+	"capabilities":
+	[
+		{
+			"platformName": "Android",
+			"platformVersion": "10",
+			"maxInstances": 1,
+			"deviceName": "Galaxy A20",
+			"UDID": "R58N717C6NB"
+		}
+	],
+	"configuration":
+	{
+		"cleanUpCycle": 2000,
+		"timeout": 30000,
+		"hubPort": 4444,
+		"port": 4725,
+		"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+		"url": "http://192.168.88.60:4444/wd/hub",
+		"hub": "http://192.168.88.60:4444/grid/register/",
+		"hubHost": "192.168.88.60",
+		"register": true,
+		"registerCycle": 5000,
+		"maxSession": 1
+	}
+}
+

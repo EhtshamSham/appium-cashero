@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional" parallel="tests" thread-count="1">
+	<test verbose="1" name="Galaxy S9+">
+		<parameter name="PLATFORM_VERSION" value="10" />
+		<parameter name="DEVICE_NAME" value="Galaxy S9+" />
+		<parameter name="UDID" value="1afac86705047ece" />
+		<parameter name="device-url"
+			value="http://0.0.0.0:4727/wd/hub" />
+		<classes>
+			<class name="tests.LoginTests" />
+		</classes>
+	</test> <!-- -->
+</suite> <!-- Suite -->

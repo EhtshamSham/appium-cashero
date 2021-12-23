@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Functional suite" parallel="tests" thread-count="2">
+	<test verbose="1" name="Pixel 4a">
+		<parameter name="PLATFORM_VERSION" value="11.0" />
+		<parameter name="DEVICE_NAME" value="Pixel 4a" />
+		<parameter name="UDID" value="09091JEC214196" />
+		<parameter name="device-url"
+			value="http://0.0.0.0:4724/wd/hub" />
+		<classes>
+			<class name="tests.LoginTests" />
+		</classes>
+	</test> <!-- -->
+</suite> <!-- Suite -->
